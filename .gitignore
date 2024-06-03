@@ -1,0 +1,5 @@
+# Ignore Vim backup files
+*~
+
+# Ignore pycache
+*__pycache__/*
