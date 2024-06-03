@@ -3,3 +3,7 @@
 
 # Ignore pycache
 *__pycache__/*
+
+# Ignore protobuf generated sources
+*_pb2*.py
+

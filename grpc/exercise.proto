@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package exercise;
+
+service Identify {
+	rpc sendID(ID) returns (sendIDReply) {}
+}
+
+message ID {
+	string dni = 1;
+	string email = 2;
+	string fullname = 3;
+}
+
+message sendIDReply {
+	bool success = 1;
+	string reason = 2;
+}
+

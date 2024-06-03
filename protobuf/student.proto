@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message Student {
+	repeated string name = 3; // Item 0: First name. Item 1: last name
+	string email = 2;
+	int64 id = 1;
+}
+
+message StudentACK {
+	enum StudentDataOK {
+		UNKNOWN = 0;
+		YES = 1;
+		NO = 2;
+	}
+	
+	StudentDataOK data_ok = 1;
+}
+
